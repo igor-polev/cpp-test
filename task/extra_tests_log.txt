@@ -1,0 +1,46 @@
+------ Test input data check ------
+
+Test input: 14nuZCWe76kWigUKAjFxyJLFHQyLTsKXYk
+
+------ Algorithm output ------
+
+Passphrase          : 14nuZCWe76kWigUKAjFxyJLFHQyLTsKXYk
+Private key         : 7e033af7b5ae1479f7afa0b9f4f014c3dc3c2fa7a407c90d5375f56d9b62f389
+WIF    uncompressed : 5JmnQRju3u43krhHM8j7vQCuc16amDLKJUUuiZP5Dai1s7cP62v
+WIF    compressed   : L1SfQQCLjnkTAaLo9s6uYhRZBVRe29SFn8JBgRvRcXn2oiZsfd24
+P2PKH  uncompressed : 1HamTvNJfggDioTbPgnC2ujQpCj4BEJqu
+P2PKH  compressed   : 1DvtF6X5b9cBrMZa4Yff9tARCLqP5ZyB47
+P2SH   compressed   : 33jG8bEWixicmjURQaRohfFrhsztXECph7
+BECH32 compressed   : bc1q3hf9fdw2mqc4u3gsn7908ps5ayd0yrghf9t8pg
+
+------ Test input data check ------
+
+Test input: emergency
+
+------ Algorithm output ------
+
+Passphrase          : emergency
+Private key         : b955e6cd0808744cf5cba260906e156ab4c43076b4c933dea0a1df1baae2a4bb
+WIF    uncompressed : 5KDujGAoMSaaF5qYZodVH7ezpeDEiZ9UH1pmd6giSiSgCmDuRVr
+WIF    compressed   : L3RyjXxFbDuBjAMGKnp3p8NiDHF1YQtPPgdqxL6HvVvL2jM9LRb2
+P2PKH  uncompressed : 1PQiixL1SyytXoUGFBGA5ptW9uTjsBrdhX
+P2PKH  compressed   : 16Zvzr4xZ4ZLrmp2DkHyvaU1T1GHF2jjxW
+P2SH   compressed   : 3BiA6yztvfLRqNb56o1zGgd4WinL8GY3LB
+BECH32 compressed   : bc1q85fs8vz6lzml388ycvl95u9vnatjaf0fvr9dy0
+
+------ Test input data check ------
+
+Test input: fly by night
+
+------ Algorithm output ------
+
+Passphrase          : fly by night
+Private key         : 5e8943aaff3e35f75f697a5c78c030660c8c906da562b38f049c071cfe22a600
+WIF    uncompressed : 5JXvP5rg2YrzPRFKHfR7cDixUoVkjWU3x52TutU1JNdp4jRLWZ9
+WIF    compressed   : KzPUcUSFFqdeHx2BiYZSATABsiDv2d4Q24mTnSACKgVUj6dkmptZ
+P2PKH  uncompressed : 1CFQfX3B9Dr4hVmpPK35L9gas1giZEdnGd
+P2PKH  compressed   : 14xWDTbsaf6hcYFNc8EEmU4pSAvUfLR5Ht
+P2SH   compressed   : 3LFcsXNu8nGy5Nv8vAAyYRX3C4GXNkdgHQ
+BECH32 compressed   : bc1q9dn6glvzjh23yt2d8hpl408rdstjv9c3038zry
+
+

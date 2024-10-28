@@ -5,7 +5,7 @@
 
 // Convert data between 2^x bases. Used in BECH32 encoding.
 // Adopted from python version written by Pieter Wuille:
-// https://github.com/libbitcoin/electrum / electrum/segwit_addr.py
+// https://github.com/libbitcoin/electrum/blob/master/electrum/segwit_addr.py
 
 data_chunk convert_bits(
     const data_chunk& data,

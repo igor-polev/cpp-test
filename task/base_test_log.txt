@@ -1,0 +1,27 @@
+------ Test input data check ------
+
+Test input: bitcoin is awesome
+
+------ Algorithm output ------
+
+Passphrase          : bitcoin is awesome
+Private key         : 23d4a09295be678b21a5f1dceae1f634a69c1b41775f680ebf8165266471401b
+WIF    uncompressed : 5J64pq77XjeacCezwmAr2V1s7snvvJkuAz8sENxw7xCkikceV6e
+WIF    compressed   : KxRMt7KypfEsLNSikhxTPYepDMBizHNmH5Bii3wssgesxrkHNJg6
+P2PKH  uncompressed : 14NWDXkQwcGN1Pd9fboL8npVynD5SfyJAE
+P2PKH  compressed   : 1JRW4d8vHZseMEtYbgJ7MwPG1TasHUUVNq
+P2SH   compressed   : 3LtPxQEqqo1sYGF7VTEufzBUki6pFiDVa1
+BECH32 compressed   : bc1qhuwxrtqe2akhr4rz8vv97waw9g75ma4unk5vnf
+
+
+------ Result checks ------
+
+Private key test ... OK
+WIFc test        ... OK
+WIFu test        ... OK
+P2PKHc test      ... OK
+P2PKHu test      ... OK
+P2SHc test       ... OK
+BECH32c test     ... OK
+
+------ Checks completed ------

@@ -53,7 +53,7 @@ qt_add_executable(btc
 target_include_directories(btc
     PRIVATE
     ${LIBBECH_INCLUDE}
-    # Quick-fix for header not found
+    # Quick-fix for "header not found"
     /opt/Qt/6.8.0/gcc_64/include/QtWidgets
 )
 

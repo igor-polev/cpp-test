@@ -16,10 +16,15 @@ const string test_BECH32c = "bc1qhuwxrtqe2akhr4rz8vv97waw9g75ma4unk5vnf";
 int main(int argc, char* argv[]) {
 
     btc_key test_key(test_input);
-    test_ostream test_log("test_results.txt");
+    test_ostream test_log("test_log.txt");
 
-    test_log << "------ Testing program ------\n\n";
+    test_log << "------ Test input data check ------\n\n";
+    test_log << "Test input: " << test_input << "\n";
+    
+    test_log << "\n------ Algorithm output ------\n\n";
     test_log << string(test_key) << "\n";
+
+    test_log << "\n------ Result checks ------\n\n";
 
     test_log << "Private key test ... " <<
     ((test_private == test_key.get_private()) ? "OK" : "ERROR") << "\n";
@@ -42,7 +47,7 @@ int main(int argc, char* argv[]) {
     test_log << "BECH32c test     ... " <<
     ((test_BECH32c == test_key.get_BECH32c()) ? "OK" : "ERROR") << "\n";
 
-    test_log << "\n------ Tests finished ------\n";
+    test_log << "\n------ Checks completed ------\n";
 
     return 0;
 }
