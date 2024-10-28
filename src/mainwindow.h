@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "btc_global.h"
+#include "btc_key.hpp"
 #include <QMainWindow>
 
 namespace Ui {
@@ -20,6 +21,7 @@ public:
 private:
 
     Ui::MainWindow *ui;
+    btc_key keyManager;
 
 };
 

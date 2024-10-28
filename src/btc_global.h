@@ -5,6 +5,8 @@
 
 // #define NDEBUG
 
+#define MIN_PASS_LENGTH 6
+
 #include <string>
 using std::string;
 

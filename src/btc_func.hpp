@@ -5,7 +5,6 @@
 
 #include "btc_global.h"
 #include <bitcoin/system.hpp>
-#include <iostream>
 #include <fstream>
 
 using namespace bc::system;

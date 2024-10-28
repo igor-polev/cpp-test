@@ -15,34 +15,34 @@ const string test_BECH32c = "bc1qhuwxrtqe2akhr4rz8vv97waw9g75ma4unk5vnf";
 
 int main(int argc, char* argv[]) {
 
-    const btc_key test_key(test_input);
+    btc_key test_key(test_input);
     test_ostream test_log("test_results.txt");
 
-    test_log << "------ Testing program: ------" << std::endl << std::endl;
-    test_log << string(test_key) << std::endl;
+    test_log << "------ Testing program ------\n\n";
+    test_log << string(test_key) << "\n";
 
     test_log << "Private key test ... " <<
-    (test_private == btc_key.get_private()) ? "OK" : "ERROR" << std::endl;
+    ((test_private == test_key.get_private()) ? "OK" : "ERROR") << "\n";
 
-    test_log << "WIFc test ... " <<
-    (test_WIFc    == btc_key.get_WIFc())    ? "OK" : "ERROR" << std::endl;
+    test_log << "WIFc test        ... " <<
+    ((test_WIFc    == test_key.get_WIFc())    ? "OK" : "ERROR") << "\n";
 
-    test_log << "WIFu test ... " <<
-    (test_WIFu    == btc_key.get_WIFu())    ? "OK" : "ERROR" << std::endl;
+    test_log << "WIFu test        ... " <<
+    ((test_WIFu    == test_key.get_WIFu())    ? "OK" : "ERROR") << "\n";
 
-    test_log << "P2PKHc test ... " <<
-    (test_P2PKHc  == btc_key.get_P2PKHc())  ? "OK" : "ERROR" << std::endl;
+    test_log << "P2PKHc test      ... " <<
+    ((test_P2PKHc  == test_key.get_P2PKHc())  ? "OK" : "ERROR") << "\n";
 
-    test_log << "P2PKHu test ... " <<
-    (test_P2PKHu  == btc_key.get_P2PKHu())  ? "OK" : "ERROR" << std::endl;
+    test_log << "P2PKHu test      ... " <<
+    ((test_P2PKHu  == test_key.get_P2PKHu())  ? "OK" : "ERROR") << "\n";
 
-    test_log << "P2SHc test ... " <<
-    (test_P2SHc   == btc_key.get_P2SHc())   ? "OK" : "ERROR" << std::endl;
+    test_log << "P2SHc test       ... " <<
+    ((test_P2SHc   == test_key.get_P2SHc())   ? "OK" : "ERROR") << "\n";
 
-    test_log << "BECH32c test ... " <<
-    (test_BECH32c == btc_key.get_BECH32c()) ? "OK" : "ERROR" << std::endl;
+    test_log << "BECH32c test     ... " <<
+    ((test_BECH32c == test_key.get_BECH32c()) ? "OK" : "ERROR") << "\n";
 
-    test_log << std::endl << "------ Tests finished. ------" << std::endl;
+    test_log << "\n------ Tests finished ------\n";
 
     return 0;
 }

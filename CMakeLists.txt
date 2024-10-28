@@ -41,7 +41,7 @@ find_package(
 
 qt_standard_project_setup()
 
-qt_add_executable(test-cpp
+qt_add_executable(btc
     src/main.cpp
     src/mainwindow.cpp
     src/btc_func.cpp
@@ -50,14 +50,14 @@ qt_add_executable(test-cpp
     src/btc_key.cpp
 )
 
-target_include_directories(test-cpp
+target_include_directories(btc
     PRIVATE
     ${LIBBECH_INCLUDE}
     # Quick-fix for header not found
     /opt/Qt/6.8.0/gcc_64/include/QtWidgets
 )
 
-target_link_libraries(test-cpp
+target_link_libraries(btc
     PRIVATE
     ${LIBBITCOIN}
     ${Boost_PROGRAM_OPTIONS_LIBRARY}
