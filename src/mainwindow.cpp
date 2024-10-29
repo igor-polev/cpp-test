@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     ui->UserInput->setPlaceholderText(QString::fromStdString(
-        "Please, enter minimum " + std::to_string(MIN_PASS_LENGTH) + "symbols."
+        "Please, enter minimum " + std::to_string(MIN_PASS_LENGTH) + " symbols."
     ));
 
     connect(
